@@ -1,0 +1,23 @@
+[
+  {
+    "name": "admin",
+    "path": "/admin",
+    "component": "/Users/felixkoch/Documents/Code/DasistjetztdasfinaleProjekt/pages/admin.vue",
+    "chunkName": "pages/admin",
+    "_name": "_167e6592"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "/Users/felixkoch/Documents/Code/DasistjetztdasfinaleProjekt/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_e60dc75e"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/felixkoch/Documents/Code/DasistjetztdasfinaleProjekt/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_795d0d8c"
+  }
+]

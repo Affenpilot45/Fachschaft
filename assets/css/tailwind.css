@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .main-grid {
+        @apply grid grid-cols-5 md:grid-cols-12;
+    }
+
+    .main-h1 {
+        @apply font-bold;
+    }
+}
+
+body{
+    background-color:#F5EBEB; margin:10px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+.navbar > a {
+    color: #867070;
+    padding-left: 100px;
+    padding-right: 100px; 
+    
+}
+
+.navbar {
+    background-color:#E4D0D0;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    border:black solid 1px;
+
+}
+
+.formular {
+    background-color: #E4D0D0; width:fit-content; padding:10px;
+}

@@ -1,0 +1,29 @@
+{
+  "ArticleForm": {
+    "description": "Auto imported from components/ArticleForm.vue"
+  },
+  "Body": {
+    "description": "Auto imported from components/Body.vue"
+  },
+  "Header1": {
+    "description": "Auto imported from components/Header1.vue"
+  },
+  "HiddenPage": {
+    "description": "Auto imported from components/HiddenPage.vue"
+  },
+  "Login": {
+    "description": "Auto imported from components/Login.vue"
+  },
+  "Contact": {
+    "description": "Auto imported from components/contact.vue"
+  },
+  "Features": {
+    "description": "Auto imported from components/features.vue"
+  },
+  "Images": {
+    "description": "Auto imported from components/images.vue"
+  },
+  "Navbar": {
+    "description": "Auto imported from components/navbar.vue"
+  }
+}

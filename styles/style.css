@@ -1,0 +1,21 @@
+h1 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.article-form {
+    input, textarea {
+        border: 1px solid black;
+    }
+
+    button {
+        border: 1px solid black;
+        border-radius: 15%;
+    }
+}
