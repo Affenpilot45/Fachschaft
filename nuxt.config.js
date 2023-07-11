@@ -40,6 +40,10 @@ export default {
     "bootstrap-vue/nuxt"
   ],
 
+  bootstrapVue: {
+    icons: true
+  },
+
   firebase: {
     config: {
       src: '~/plugins/firebase.js'

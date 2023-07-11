@@ -1,0 +1,36 @@
+@tailwind base;
+
+
+@layer base {
+    .fs-grid {
+        @apply grid grid-cols-5 md:grid-cols-12;
+    }    
+    
+    h1 {
+        font-weight: bold;
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+    
+    h3 {
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: underline;
+    }
+    
+    .article-form, .login {
+        input, textarea {
+            border: 1px solid black;
+        }
+    
+        button {
+            border: 1px solid black;
+            border-radius: 15%;
+        }
+    }
+}    

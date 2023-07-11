@@ -7,8 +7,6 @@ export { default as Register } from '../../components/Register.vue'
 export { default as Collapsablenav } from '../../components/collapsablenav.vue'
 export { default as Contact } from '../../components/contact.vue'
 export { default as Features } from '../../components/features.vue'
-export { default as Images } from '../../components/images.vue'
-export { default as Logout } from '../../components/logout.vue'
 export { default as Navbar } from '../../components/navbar.vue'
 
 // nuxt/nuxt.js#8607

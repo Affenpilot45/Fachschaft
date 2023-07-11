@@ -15,6 +15,4 @@ You can directly use them in pages and other components without the need to impo
 - `<Collapsablenav>` | `<collapsablenav>` (components/collapsablenav.vue)
 - `<Contact>` | `<contact>` (components/contact.vue)
 - `<Features>` | `<features>` (components/features.vue)
-- `<Images>` | `<images>` (components/images.vue)
-- `<Logout>` | `<logout>` (components/logout.vue)
 - `<Navbar>` | `<navbar>` (components/navbar.vue)

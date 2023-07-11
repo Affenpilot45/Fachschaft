@@ -1,12 +1,12 @@
 <template>
-    <div class="">
-        <h2>Hier sind alle aktuellen Artikel:</h2>
-        <ul>
-            <li v-for="item in items" :key="item.id">
-                {{ item.title }} - {{ item.content }}
-            </li>
-        </ul>
-    </div>
+  <div class="">
+      <h2>Hier sind alle aktuellen Artikel:</h2>
+      <ul>
+          <li v-for="item in items" :key="item.id">
+              {{ item.title }} - {{ item.content }}
+          </li>
+      </ul>
+  </div>
 </template>
   
   

@@ -1,6 +1,6 @@
 <template>
-    <div class="p-8">
-        <collapsablenav />
+    <div class="">
+        <navbar />
         <Register />
     </div>
   </template>

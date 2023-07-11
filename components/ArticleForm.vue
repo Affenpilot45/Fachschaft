@@ -5,7 +5,7 @@
             <input type="text" id="title" v-model="title">
             <label for="content">Inhalt:</label>
             <textarea id="content" v-model="content"></textarea>
-            <button class="w-1/3" type="submit">Speichern</button>
+            <button type="submit">Speichern</button>
         </form>
     </div>
 </template>

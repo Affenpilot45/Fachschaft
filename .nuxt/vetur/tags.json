@@ -26,12 +26,6 @@
   "Features": {
     "description": "Auto imported from components/features.vue"
   },
-  "Images": {
-    "description": "Auto imported from components/images.vue"
-  },
-  "Logout": {
-    "description": "Auto imported from components/logout.vue"
-  },
   "Navbar": {
     "description": "Auto imported from components/navbar.vue"
   }

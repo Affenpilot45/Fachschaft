@@ -1,9 +1,7 @@
 <template>
-  <div class="p-8">
-<!--     <Header1 /> -->
-    <collapsablenav />
+  <div class="flex flex-col justify-center">
+    <navbar />
     <Body />
-    <features />
   </div>
 </template>
 

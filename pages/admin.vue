@@ -1,6 +1,6 @@
 <template>
-    <div class="p-8">
-        <Navbar />
+    <div class="">
+        <navbar />
         <ArticleForm />
     </div>
   </template>
