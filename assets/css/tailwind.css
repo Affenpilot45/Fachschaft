@@ -18,24 +18,42 @@ body{
 
 h1{
     font-size: 30px;
+    font-weight: bold;
 }
 
-.navbar > a {
+/* .navbar > a {
     color: #867070;
     padding-left: 100px;
     padding-right: 100px; 
     
-}
+} */
 
-.navbar {
+/* .navbar {
     background-color:#E4D0D0;
     text-align: center;
     margin-left: 100px;
     margin-right: 100px;
     border:black solid 1px;
 
-}
+} */
 
 .formular {
     background-color: #E4D0D0; width:fit-content; padding:10px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.article-form {
+    input, textarea {
+        border: 1px solid black;
+    }
+
+    button {
+        border: 1px solid black;
+        border-radius: 15%;
+    }
 }

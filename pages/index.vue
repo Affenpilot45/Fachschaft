@@ -1,9 +1,9 @@
 <template>
   <div class="p-8">
-    <Header1 />
+<!--     <Header1 /> -->
+    <collapsablenav />
     <Body />
     <features />
-    <images />
   </div>
 </template>
 

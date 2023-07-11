@@ -13,6 +13,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 /* Plugins */
 
 import nuxt_plugin_plugin_0d26a9e4 from 'nuxt_plugin_plugin_0d26a9e4' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_48e9f553 from 'nuxt_plugin_bootstrapvue_48e9f553' // Source: ./bootstrap-vue.js (mode: 'all')
 import nuxt_plugin_firebase_34d6f55a from 'nuxt_plugin_firebase_34d6f55a' // Source: ../plugins/firebase.js (mode: 'all')
 
 // Component: <ClientOnly>
@@ -181,6 +182,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_plugin_0d26a9e4 === 'function') {
     await nuxt_plugin_plugin_0d26a9e4(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_bootstrapvue_48e9f553 === 'function') {
+    await nuxt_plugin_bootstrapvue_48e9f553(app.context, inject)
   }
 
   if (typeof nuxt_plugin_firebase_34d6f55a === 'function') {

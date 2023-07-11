@@ -1,13 +1,13 @@
 <template>
     <div class="p-8">
         <collapsablenav />
-        <Login />
+        <Register />
     </div>
   </template>
   
   <script>
   export default {
-    name: 'LoginPage'
+    name: 'RegisterPage'
   }
   </script>
   

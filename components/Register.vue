@@ -1,9 +1,9 @@
 <template>
     <div>
-      <form @submit.prevent="login">
+      <form @submit.prevent="register">
         <input v-model="email" type="email" placeholder="Email" required>
         <input v-model="password" type="password" placeholder="Password" required>
-        <button type="submit">Anmelden</button>
+        <button type="submit">Registrieren</button>
       </form>
     </div>
   </template>
@@ -19,18 +19,18 @@
       };
     },
     methods: {
-      login() {
-/*         console.log(this.email)
-        console.log(this.password) */
-        firebase.auth().signInWithEmailAndPassword(this.email, this.password)
+      register() {
+        firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
           .then(() => {
             // Erfolgreich angemeldet, umleiten zu einer geschützten Seite
-            this.$router.push('/');
+            this.$router.push('/index');
             alert("Erfolgreich!")
           })
           .catch((error) => {
             // Fehlerbehandlung
-            alert("Invalid user or password.")
+                if (error.code == "auth/weak-password") {
+                    alert("Password zu schwach. Mindestens 6 Zeichen angeben!")
+                }
           });
       },
     },

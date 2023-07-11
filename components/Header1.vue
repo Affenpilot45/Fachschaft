@@ -1,8 +1,9 @@
 <template>
     <div>
-        <h1>Wenn ich groß bin werde ich mal ein Header lülülü</h1>
+        <h1>Fachschaft Wirtschaft Fachhochschule Kiel</h1>
 
         <navbar/>
     </div>
+
     
 </template>
