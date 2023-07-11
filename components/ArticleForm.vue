@@ -1,6 +1,6 @@
 <template>
-    <div class="">
-        <form @submit.prevent="saveData" class="article-form flex flex-col">
+    <div class="article-form">
+        <form @submit.prevent="saveData" class="flex flex-col">
             <label for="title">Titel:</label>
             <input type="text" id="title" v-model="title">
             <label for="content">Inhalt:</label>

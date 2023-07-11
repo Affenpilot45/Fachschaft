@@ -1,6 +1,6 @@
 <template>
-    <div>
-      <form @submit.prevent="login" class="login">
+    <div class="login">
+      <form @submit.prevent="login">
         <input v-model="email" type="email" placeholder="Email" required>
         <input v-model="password" type="password" placeholder="Password" required>
         <button type="submit">Anmelden</button>
@@ -20,8 +20,6 @@
     },
     methods: {
       login() {
-/*         console.log(this.email)
-        console.log(this.password) */
         firebase.auth().signInWithEmailAndPassword(this.email, this.password)
           .then(() => {
             // Erfolgreich angemeldet, umleiten zu einer geschützten Seite

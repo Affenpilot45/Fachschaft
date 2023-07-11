@@ -23,7 +23,7 @@
         firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
           .then(() => {
             // Erfolgreich angemeldet, umleiten zu einer geschützten Seite
-            this.$router.push('/index');
+            this.$router.push('/');
             alert("Erfolgreich!")
           })
           .catch((error) => {
