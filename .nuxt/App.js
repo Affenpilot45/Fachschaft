@@ -14,6 +14,8 @@ import '../assets/css/tailwind.css'
 
 import '../assets/css/tailwind.css'
 
+import '../node_modules/.cache/nuxt-google-fonts/css/nuxt-google-fonts.css'
+
 import _6f6c098b from './layouts/default.vue'
 
 const layouts = { "_default": sanitizeComponent(_6f6c098b) }

@@ -5,6 +5,9 @@
   "Body": {
     "description": "Auto imported from components/Body.vue"
   },
+  "ErstifahrtAnmeldung": {
+    "description": "Auto imported from components/ErstifahrtAnmeldung.vue"
+  },
   "Header1": {
     "description": "Auto imported from components/Header1.vue"
   },
@@ -13,6 +16,9 @@
   },
   "Login": {
     "description": "Auto imported from components/Login.vue"
+  },
+  "Logincopy": {
+    "description": "Auto imported from components/Logincopy.vue"
   },
   "Register": {
     "description": "Auto imported from components/Register.vue"
@@ -23,8 +29,14 @@
   "Contact": {
     "description": "Auto imported from components/contact.vue"
   },
+  "Einsichtanmeldungen": {
+    "description": "Auto imported from components/einsichtanmeldungen.vue"
+  },
   "Features": {
     "description": "Auto imported from components/features.vue"
+  },
+  "Imagegalery": {
+    "description": "Auto imported from components/imagegalery.vue"
   },
   "Navbar": {
     "description": "Auto imported from components/navbar.vue"

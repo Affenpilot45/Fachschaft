@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-    .fs-grid {
-        @apply grid grid-cols-5 md:grid-cols-12;
+/*     .fs-grid {
+        @apply grid grid-cols-5 md:grid-cols-9;
     }    
-    
+     */
+
     h1 {
         font-weight: bold;
         font-size: 25px;
@@ -14,25 +15,34 @@
     
     h2 {
         font-weight: bold;
-        font-size: 20px;
-        text-decoration: underline;
+        font-size: 20px;;
     }
     
     h3 {
         font-weight: bold;
-        font-size: 16px;
-        text-decoration: underline;
+        font-size: 16px;;
     }
     
     .article-form, .login {
         input, textarea {
             border: 1px solid black;
         }
-    
+
         button {
             border: 1px solid black;
             border-radius: 15%;
+            width:fit-content;
+            padding: 5px;
         }
     }
+
+    .fitcontent {
+        width:fit-content;
+    }
+
+    .font-g {
+        font-family:'Rubik', 'sans-serif';
+    }
+
 }    
 

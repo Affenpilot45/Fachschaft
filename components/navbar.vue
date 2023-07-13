@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-fh-blue text-fh-blue-text py-3.5 px-6 shadow md:flex justify-between items-center">
+    <div class="bg-fh-blue text-fh-blue-text py-3.5 px-6 shadow md:flex justify-center items-center">
         <div class="">
             <nav>
                 <a href="/" class="text-fh-blue-text hover:text-white flex items-center">
@@ -44,25 +44,27 @@
 
         </div>
 
-        <span class="absolute right-6 top-1.5 cursor-pointer" @click="MenuOpen()">
+        <span class="absolute right-6 top-1.5 cursor-pointer text-4xl" @click="MenuOpen()">
             <b-icon icon="x-lg" v-if="open"></b-icon>
             <b-icon icon="list" scale="1.5" v-if="!open"></b-icon>
         </span>
-
-        <ul class="md:flex md:items-center md:px-0 px-3 md:pb-0 pb-10 md:static absolute bg-fh-blue md:w-auto w-full top-14 duration-700 ease-in left-0" v-if="open">
-            <li class="md:mx-4">
-                <a href="/admin" class="text-xl hover:text-white" v-if="user">Admin</a>
-            </li>
-            <li class="md:mx-4">
-                <a href="/login" class="text-xl hover:text-white" v-if="!user">Login</a>
-            </li>
-            <li class="md:mx-4">
-                <a href="/register" class="text-xl hover:text-white" v-if="!user">Registrieren</a>
-            </li>
-            <li class="md:mx-4" >
-                <button class="text-xl" @click="logout()" v-if="user">Logout</button>
-            </li>
-        </ul>
+        
+        <div class="md:absolute right-0">
+            <ul class="px-3 pb-10 absolute bg-fh-blue top-8 right-0 duration-700 ease-in" v-if="open">
+                <li class="">
+                    <a href="/admin" class="text-xl hover:text-white" v-if="user">Admin</a>
+                </li>
+                <li class="">
+                    <a href="/login" class="text-xl hover:text-white" v-if="!user">Login</a>
+                </li>
+                <li class="">
+                    <a href="/register" class="text-xl hover:text-white" v-if="!user">Registrieren</a>
+                </li>
+                <li class="" >
+                    <button class="text-xl hover:text-white" @click="logout()" v-if="user">Logout</button>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 

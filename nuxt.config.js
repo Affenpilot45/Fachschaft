@@ -33,7 +33,14 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts'
   ],
+
+  googleFonts: {
+    families: {
+      Rubik: [300, 700],
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
