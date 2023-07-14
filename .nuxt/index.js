@@ -15,6 +15,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 import nuxt_plugin_plugin_0d26a9e4 from 'nuxt_plugin_plugin_0d26a9e4' // Source: ./components/plugin.js (mode: 'all')
 import nuxt_plugin_bootstrapvue_48e9f553 from 'nuxt_plugin_bootstrapvue_48e9f553' // Source: ./bootstrap-vue.js (mode: 'all')
 import nuxt_plugin_firebase_34d6f55a from 'nuxt_plugin_firebase_34d6f55a' // Source: ../plugins/firebase.js (mode: 'all')
+import nuxt_plugin_vuetailwind_166cc8f0 from 'nuxt_plugin_vuetailwind_166cc8f0' // Source: ../plugins/vuetailwind.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -65,7 +66,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"fknuxtprojekt","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"Fachschaft","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
     router,
     nuxt: {
@@ -190,6 +191,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_firebase_34d6f55a === 'function') {
     await nuxt_plugin_firebase_34d6f55a(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_vuetailwind_166cc8f0 === 'function') {
+    await nuxt_plugin_vuetailwind_166cc8f0(app.context, inject)
   }
 
   // Lock enablePreview in context

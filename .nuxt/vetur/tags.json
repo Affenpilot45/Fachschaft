@@ -17,9 +17,6 @@
   "Login": {
     "description": "Auto imported from components/Login.vue"
   },
-  "Logincopy": {
-    "description": "Auto imported from components/Logincopy.vue"
-  },
   "Register": {
     "description": "Auto imported from components/Register.vue"
   },

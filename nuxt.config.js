@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'fknuxtprojekt',
+    title: 'Fachschaft',
     htmlAttrs: {
       lang: 'en'
     },
@@ -13,7 +13,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -21,9 +21,19 @@ export default {
     '~/assets/css/tailwind.css',
   ],
 
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+  
+
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/firebase.js'
+    '~/plugins/firebase.js',
+    '~plugins/vuetailwind.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -63,7 +73,14 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  },
+    postcss: {
+        plugins: {
+            'postcss-import': true,
+            'tailwindcss/nesting': {}, 
+             'postcss-nested': {},
+        },
+    },
+},
 
 
   router: {

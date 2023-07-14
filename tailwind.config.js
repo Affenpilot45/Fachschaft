@@ -1,6 +1,7 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+  ],
+  
   theme: {
     extend: {
       colors: {
@@ -13,7 +14,13 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      opacity: ['disabled'],
+      cursor: ['disabled'],
+    },
   },
-  plugins: [],
+
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }

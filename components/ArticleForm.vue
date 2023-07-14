@@ -7,7 +7,7 @@
                 <input type="text" id="title" v-model="title" placeholder="Titel">
                 <label class="mt-4" for="content">Inhalt:</label>
                 <textarea id="content" v-model="content" placeholder="Inhalt"></textarea>
-                <button class="shadow blur mt-4 bg-blue-700 text-white hover:bg-blue-300" type="submit">Publish</button>
+                <button class="shadow mt-4 bg-blue-700 text-white hover:bg-blue-300" type="submit">Veröffentlichen</button>
             </form>
         </div>
       </div>

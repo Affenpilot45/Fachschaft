@@ -1,14 +1,28 @@
 <template>
-    <div class="bg-fh-blue text-fh-blue-text py-3.5 px-6 shadow md:flex justify-center items-center">
-        <div class="">
-            <nav>
-                <a href="/" class="text-fh-blue-text hover:text-white flex items-center">
-                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                    width="40.000000pt" height="40.000000pt" viewBox="0 0 1280.000000 1280.000000"
-                    preserveAspectRatio="xMidYMid meet">
-                    <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
-                    fill="#5a73db" stroke="none">
-                    <path d="M6170 10116 c-197 -42 -343 -127 -491 -284 -131 -140 -203 -277 -240
+  <div
+    class="fixed top-0 border-0 rounded-b-lg self-center flex w-2/3 flex-wrap items-center justify-center p-2 bg-fh-blue text-fh-blue-text"
+  >
+    <div class="grow">
+        <div class="flex flex-row items-center justify-center">
+            <a
+              href="/"
+              class="text-fh-blue-text hover:text-white flex items-center justify-center"
+            >
+            <svg
+            version="1.0"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40.000000pt"
+            height="40.000000pt"
+            viewBox="0 0 1280.000000 1280.000000"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <g
+              transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+              fill="#5a73db"
+              stroke="none"
+            >
+              <path
+                d="M6170 10116 c-197 -42 -343 -127 -491 -284 -131 -140 -203 -277 -240
                     -457 -34 -163 -20 -360 35 -522 75 -219 215 -381 486 -562 144 -95 145 -96
                     159 -146 9 -34 13 -117 14 -265 1 -189 -2 -222 -19 -269 -34 -95 -36 -96 -317
                     -96 l-242 0 -84 73 c-120 105 -146 117 -256 117 -81 0 -95 -3 -144 -30 -112
@@ -35,71 +49,86 @@
                     172 188 232 310 84 174 116 345 98 533 -38 404 -311 726 -704 828 -124 32
                     -350 42 -455 20z m373 -431 c142 -30 269 -118 321 -222 64 -129 78 -330 31
                     -468 -64 -193 -198 -325 -371 -366 -76 -18 -229 -15 -299 5 -156 46 -296 156
-                    -353 277 -42 90 -57 160 -56 269 0 221 116 388 326 471 119 47 277 61 401 34z"/>
-                    </g>
-                    </svg>
-                    <h1 class="text-xl">Fachschaft</h1>
-                </a>
-            </nav>
-
-        </div>
-
-        <span class="absolute right-6 top-1.5 cursor-pointer text-4xl" @click="MenuOpen()">
-            <b-icon icon="x-lg" v-if="open"></b-icon>
-            <b-icon icon="list" scale="1.5" v-if="!open"></b-icon>
-        </span>
-        
-        <div class="md:absolute right-0">
-            <ul class="px-3 pb-10 absolute bg-fh-blue top-8 right-0 duration-700 ease-in" v-if="open">
-                <li class="">
-                    <a href="/admin" class="text-xl hover:text-white" v-if="user">Admin</a>
-                </li>
-                <li class="">
-                    <a href="/login" class="text-xl hover:text-white" v-if="!user">Login</a>
-                </li>
-                <li class="">
-                    <a href="/register" class="text-xl hover:text-white" v-if="!user">Registrieren</a>
-                </li>
-                <li class="" >
-                    <button class="text-xl hover:text-white" @click="logout()" v-if="user">Logout</button>
-                </li>
-            </ul>
+                    -353 277 -42 90 -57 160 -56 269 0 221 116 388 326 471 119 47 277 61 401 34z"
+              />
+            </g>
+          </svg>
+          <h1 class="text-xl">Fachschaft</h1>
+        </a>
         </div>
     </div>
+
+    <div class="">
+      <t-dropdown text="User">
+        <div class="py-1 rounded-md shadow-xs">
+          <a
+            href="/admin"
+            class="block px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+            role="menuitem"
+            v-if="user"
+          >
+            Admin
+          </a>
+          
+          <a
+            href="/login"
+            class="block px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+            role="menuitem"
+            v-if="!user"
+          >
+            Login
+          </a>
+          <a
+            href="/register"
+            class="block px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+            role="menuitem"
+            v-if="!user"
+          >
+            Registrieren
+          </a>
+
+          <button
+            class="block px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+            role="menuitem"
+            v-if="user"
+            @click="logout"
+          >
+            Logout
+          </button>
+
+        </div>
+      </t-dropdown>
+    </div>
+  </div>
 </template>
 
 <script>
-import firebase from '~/plugins/firebase.js';
+import firebase from "~/plugins/firebase.js";
 
-import { ref } from 'vue';
+import { ref } from "vue";
 export default {
 
+/*     user = window.localStorage.getItem("isAuthenticated") ? true : false; */
 
-    setup() {
-        const open = ref(false)
+  setup() {
+    const open = ref(false);
 
-        function MenuOpen() {
-            open.value = !open.value
-        }
+    function MenuOpen() {
+      open.value = !open.value;
+    }
 
-    return { open, MenuOpen }
-
-
+    return { open, MenuOpen };
+  },
+  methods: {
+    logout() {
+      firebase.auth().signOut();
+      window.location.reload();
     },
-    methods: {
-        logout() {
-            firebase.auth().signOut();
-            window.location.reload();
-        }
+  },
+  computed: {
+    user() {
+        return firebase.auth().currentUser;
     },
-    computed: {
-        user() {
-            
-            return firebase.auth().currentUser;
-
-
-        }
-    },
-
-}
+  },
+};
 </script>

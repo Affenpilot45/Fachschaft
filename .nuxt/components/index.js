@@ -4,7 +4,6 @@ export { default as ErstifahrtAnmeldung } from '../../components/ErstifahrtAnmel
 export { default as Header1 } from '../../components/Header1.vue'
 export { default as HiddenPage } from '../../components/HiddenPage.vue'
 export { default as Login } from '../../components/Login.vue'
-export { default as Logincopy } from '../../components/Logincopy.vue'
 export { default as Register } from '../../components/Register.vue'
 export { default as Collapsablenav } from '../../components/collapsablenav.vue'
 export { default as Contact } from '../../components/contact.vue'

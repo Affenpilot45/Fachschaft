@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-7 lg:grid-cols-9 pb-3 lg:pb-5">
+  <div class="grid grid-cols-7 lg:grid-cols-9 pb-3 lg:pb-5 mt-9">
     <div class="flex flex-col text-center lg:col-start-4 lg:col-span-3 col-start-2 col-span-5">
         <h2 class="py-10">Neues aus der Fachschaft:</h2>
         <ul class="border-4 border-fh-blue rounded-lg lg:px-5 divide-y-2 divide-dashed">

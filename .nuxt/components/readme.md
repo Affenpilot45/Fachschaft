@@ -12,7 +12,6 @@ You can directly use them in pages and other components without the need to impo
 - `<Header1>` | `<header1>` (components/Header1.vue)
 - `<HiddenPage>` | `<hidden-page>` (components/HiddenPage.vue)
 - `<Login>` | `<login>` (components/Login.vue)
-- `<Logincopy>` | `<logincopy>` (components/Logincopy.vue)
 - `<Register>` | `<register>` (components/Register.vue)
 - `<Collapsablenav>` | `<collapsablenav>` (components/collapsablenav.vue)
 - `<Contact>` | `<contact>` (components/contact.vue)
