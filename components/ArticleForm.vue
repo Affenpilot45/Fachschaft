@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col justify-center py-3 lg:py-5">
+    <div class="flex flex-col justify-center py-3 lg:py-5 mt-16">
         <div class="flex flex-col self-center lg:grid lg:grid-cols-9 w-1/2">
           <h3 class="flex text-center flex-col justify-center lg:col-start-3 lg:col-span-5" >Schreibt Artikel, welche auf der Homepage erscheinen:</h3>
             <form @submit.prevent="saveData" class=" bg-blue-400 shadow border-1 border-fh-blue rounded-lg article-form flex flex-col justify-center lg:col-start-2 lg:col-span-7 p-2 mt-3 " >

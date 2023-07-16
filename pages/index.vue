@@ -5,6 +5,7 @@
     <div class="divide-y">
       <Body />
       <ErstifahrtAnmeldung />
+      <calender />
       <imagegalery />
     </div>
   </div>

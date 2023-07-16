@@ -13,6 +13,7 @@ You can directly use them in pages and other components without the need to impo
 - `<HiddenPage>` | `<hidden-page>` (components/HiddenPage.vue)
 - `<Login>` | `<login>` (components/Login.vue)
 - `<Register>` | `<register>` (components/Register.vue)
+- `<Calender>` | `<calender>` (components/calender.vue)
 - `<Collapsablenav>` | `<collapsablenav>` (components/collapsablenav.vue)
 - `<Contact>` | `<contact>` (components/contact.vue)
 - `<Einsichtanmeldungen>` | `<einsichtanmeldungen>` (components/einsichtanmeldungen.vue)

@@ -9,7 +9,7 @@
                 <label class="mt-4" for="nachname">Nachname:</label>
                 <input id="nachname" v-model="nachname" placeholder="Nachname">
                 <label class="mt-4" for="matrikelnummer">Matrikelnummer:</label>
-                <input id="matrikelnummer" v-model="matrikelnummer" placeholder="Matrikelnummer">
+                <input id="matrikelnummer" maxlength="6" v-model="matrikelnummer" placeholder="Matrikelnummer">
                 <button class="shadow mt-4 bg-blue-700 text-white hover:bg-blue-300" type="submit">Anmelden</button>
             </form>
         </div>
