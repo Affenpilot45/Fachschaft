@@ -43,13 +43,5 @@
     .font-g {
         font-family:'Rubik', 'sans-serif';
     }
-
-    .dhidden {
-        display:hidden,
-    }
-
-    .dvisible{
-        display:block
-    }
 }    
 

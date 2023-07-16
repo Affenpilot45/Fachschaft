@@ -23,9 +23,6 @@
   "Calender": {
     "description": "Auto imported from components/calender.vue"
   },
-  "Collapsablenav": {
-    "description": "Auto imported from components/collapsablenav.vue"
-  },
   "Contact": {
     "description": "Auto imported from components/contact.vue"
   },
@@ -40,5 +37,8 @@
   },
   "Navbar": {
     "description": "Auto imported from components/navbar.vue"
+  },
+  "Neuesfachschaft": {
+    "description": "Auto imported from components/neuesfachschaft.vue"
   }
 }

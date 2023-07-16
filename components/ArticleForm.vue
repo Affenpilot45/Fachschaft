@@ -1,16 +1,16 @@
 <template>
-    <div class="flex flex-col justify-center py-3 lg:py-5 mt-16">
-        <div class="flex flex-col self-center lg:grid lg:grid-cols-9 w-1/2">
-          <h3 class="flex text-center flex-col justify-center lg:col-start-3 lg:col-span-5" >Schreibt Artikel, welche auf der Homepage erscheinen:</h3>
-            <form @submit.prevent="saveData" class=" bg-blue-400 shadow border-1 border-fh-blue rounded-lg article-form flex flex-col justify-center lg:col-start-2 lg:col-span-7 p-2 mt-3 " >
-                <label class="" for="title">Titel:</label>
-                <input type="text" id="title" v-model="title" placeholder="Titel">
-                <label class="mt-4" for="content">Inhalt:</label>
-                <textarea id="content" v-model="content" placeholder="Inhalt"></textarea>
-                <button class="shadow mt-4 bg-blue-700 text-white hover:bg-blue-300" type="submit">Veröffentlichen</button>
-            </form>
-        </div>
+  <div class="flex flex-col justify-center py-3 lg:py-5 mt-16">
+      <div class="flex flex-col self-center w-full md:w-1/2 mx-10 text-gray-300">
+        <h2 class="flex text-center flex-col justify-center text-ms font-semibold" >Schreibt Artikel, welche auf der Homepage erscheinen:</h2>
+          <form @submit.prevent="saveData" class=" bg-gradient-to-r from-blue-300/70 to-blue-500/70 border-4 border-fh-blue rounded-lg flex flex-col justify-center lg:col-start-2 lg:col-span-7 p-6 mt-4" >
+              <label class="text-white font-semibold" for="title">Titel:</label>
+              <input class="py-2 px-4 mt-2 rounded border border-gray-300 focus:border-blue-500 focus:outline-none" type="text" id="title" v-model="title" placeholder="Titel">
+              <label class="mt-4 text-white font-semibold" for="content">Inhalt:</label>
+              <textarea class="py-2 px-4 mt-2 h-40 rounded border border-gray-300 focus:border-blue-500 focus:outline-none" id="content" v-model="content" placeholder="Inhalt"></textarea>
+              <button class="py-2 px-4 mt-4 bg-blue-700 text-white font-bold rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50" type="submit">Veröffentlichen</button>
+          </form>
       </div>
+    </div>
 </template>
 
 <script>
@@ -31,6 +31,7 @@ methods: {
     await db.collection('meineArtikel').add(data)
     this.title = ''
     this.content = ''
+    alert("Erfolgreich!")
   }
 }
 }

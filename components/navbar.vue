@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed top-0 border-0 rounded-b-lg self-center flex w-2/3 flex-wrap items-center justify-center p-2 bg-fh-blue text-fh-blue-text"
+    class="fixed top-0 border-0 rounded-b-lg self-center flex md:w-2/3 w-full items-center justify-center p-2 bg-fh-blue text-fh-blue-text"
   >
     <div class="grow">
         <div class="flex flex-row items-center justify-center">
@@ -53,19 +53,19 @@
               />
             </g>
           </svg>
-          <h1 class="text-xl">Fachschaft</h1>
+          <h1 class="text-xl">Fachschaft <br>Wirtschaft</h1>
         </a>
         </div>
     </div>
 
     <div class="">
       <t-dropdown text="User">
-        <div class="py-1 rounded-md shadow-xs">
+        <div class="py-1 rounded-md shadow-xs ">
           <a
             href="/admin"
             class="block px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
             role="menuitem"
-            v-if="user"
+            v-if="isAuthenticated"
           >
             Admin
           </a>
@@ -74,7 +74,7 @@
             href="/login"
             class="block px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
             role="menuitem"
-            v-if="!user"
+            v-if="!isAuthenticated"
           >
             Login
           </a>
@@ -82,7 +82,7 @@
             href="/register"
             class="block px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
             role="menuitem"
-            v-if="!user"
+            v-if="!isAuthenticated"
           >
             Registrieren
           </a>
@@ -90,7 +90,7 @@
           <button
             class="block px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
             role="menuitem"
-            v-if="user"
+            v-if="isAuthenticated"
             @click="logout"
           >
             Logout
@@ -108,7 +108,14 @@ import firebase from "~/plugins/firebase.js";
 import { ref } from "vue";
 export default {
 
-/*     user = window.localStorage.getItem("isAuthenticated") ? true : false; */
+  computed: {
+  isAuthenticated() {
+    if (typeof window !== 'undefined') {
+      return window.localStorage.getItem("isAuthenticated") === "true";
+    }
+    return false;
+  },
+},
 
   setup() {
     const open = ref(false);
@@ -122,12 +129,8 @@ export default {
   methods: {
     logout() {
       firebase.auth().signOut();
+      window.localStorage.setItem("isAuthenticated", "false");
       window.location.reload();
-    },
-  },
-  computed: {
-    user() {
-        return firebase.auth().currentUser;
     },
   },
 };

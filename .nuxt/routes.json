@@ -14,11 +14,11 @@
     "_name": "_e60dc75e"
   },
   {
-    "name": "test",
-    "path": "/test",
-    "component": "/Users/felixkoch/Documents/Code/DasistjetztdasfinaleProjekt/pages/test.vue",
-    "chunkName": "pages/test",
-    "_name": "_0dc1ed5a"
+    "name": "register",
+    "path": "/register",
+    "component": "/Users/felixkoch/Documents/Code/DasistjetztdasfinaleProjekt/pages/register.vue",
+    "chunkName": "pages/register",
+    "_name": "_20d1622a"
   },
   {
     "name": "index",

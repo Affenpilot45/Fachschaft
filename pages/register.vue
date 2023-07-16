@@ -4,13 +4,13 @@
   >
     <div class="flex flex-col font-g justify-center backdrop-brightness-50">
       <navbar />
-      <Login />
+      <Register />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "LoginPage",
+  name: "RegisterPage",
 };
 </script>

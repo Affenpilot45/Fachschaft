@@ -1,14 +1,17 @@
 <template>
-    <div class="bg-gradient-to-r from-blue-200 to-blue-400 flex flex-col justify-center font-g">
-        <navbar />
-        <ArticleForm />
-        <einsichtanmeldungen />
+  <div
+    class="bg-[url(https://lagerloewe.com/wp-content/uploads/2021/08/Kiel-Hafen.jpg)] bg-fixed bg-cover"
+  >
+    <div class="flex flex-col font-g justify-center backdrop-brightness-50">
+      <navbar />
+      <ArticleForm />
+      <einsichtanmeldungen />
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'AdminPage'
-  }
-  </script>
-  
+  </div>
+</template>
+
+<script>
+export default {
+  name: "AdminPage",
+};
+</script>

@@ -1,28 +1,32 @@
 <template>
-    <div class="flex flex-col justify-center py-3 lg:py-5">
-        <div class="flex flex-col self-center lg:grid lg:grid-cols-9 w-1/2">
-          <h3 class="flex text-center flex-col justify-center lg:col-start-3 lg:col-span-5" >Meldet euch hier für die Ersti-Fahrt an.<br/>
-          Gebt einfach Name, Vorname und Matrikelnummer an und ihr seid dabei.</h3>
-            <form @submit.prevent="saveData" class=" bg-blue-400 shadow border-1 border-fh-blue rounded-lg article-form flex flex-col justify-center lg:col-start-4 lg:col-span-3 p-2 mt-3 " >
-                <label class="" for="vorname">Vorname:</label>
-                <input type="text" id="vorname" v-model="vorname" placeholder="Vorname">
-                <label class="mt-4" for="nachname">Nachname:</label>
-                <input id="nachname" v-model="nachname" placeholder="Nachname">
-                <label class="mt-4" for="matrikelnummer">Matrikelnummer:</label>
-                <input id="matrikelnummer" maxlength="6" v-model="matrikelnummer" placeholder="Matrikelnummer">
-                <button class="shadow mt-4 bg-blue-700 text-white hover:bg-blue-300" type="submit">Anmelden</button>
-            </form>
+  <div class="flex flex-col justify-center py-3 lg:py-5">
+      <div class="flex flex-col self-center text-lg">
+        <div class="text-center self-center text-gray-300">
+          <h3>Meldet euch hier für die Ersti-Fahrt an.<br/>
+          Gebt einfach Name, Vorname und Matrikelnummer an und ihr seid dabei.</h3>            
         </div>
-        <div class="flex text-center justify-center text-sm mt-3">
-          <p>Die Teilnahmegebühr für die Erstifahrt beträgt: <em>15€</em>. Nach erfolgreicher Anmeldung überweisen Sie bitte diesen Betrag an die: <br/> 
-          <ul>
-            <li>Fördesparkasse</li>
-            <li>IBAN: DE56 1111 1111 1111 1111 11</li>
-            <li>Verwendungszweck: "Matrikelnummer, Erstifahrt 23"</li>
-          </ul></p>
+        <div class="w-2/3 md:w-1/2 self-center">
+          <form @submit.prevent="saveData" class="bg-gradient-to-r from-blue-300 to-blue-500 shadow-inner border border-blue-700 rounded-lg flex flex-col p-6 mt-4 text-sm md:text-base" >
+              <label class="text-white font-semibold" for="vorname">Vorname:</label>
+              <input class="py-2 px-4 mt-2 rounded border border-gray-300 focus:border-blue-500 focus:outline-none" type="text" id="vorname" v-model="vorname" required placeholder="Vorname">
+              <label class="mt-4 text-white font-semibold" for="nachname">Nachname:</label>
+              <input class="py-2 px-4 mt-2 rounded border border-gray-300 focus:border-blue-500 focus:outline-none" id="nachname" v-model="nachname" required placeholder="Nachname">
+              <label class="mt-4 text-white font-semibold" for="matrikelnummer">Matrikelnummer:</label>
+              <input class="py-2 px-4 mt-2 rounded border border-gray-300 focus:border-blue-500 focus:outline-none" id="matrikelnummer" required maxlength="6" v-model="matrikelnummer" placeholder="Matrikelnummer">
+              <button class="py-2 px-4 mt-4 bg-blue-700 text-white font-bold rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50" type="submit">Anmelden</button>
+          </form>
         </div>
-
-    </div>
+      </div>
+      <div class="flex text-center justify-center text-sm mt-3 text-gray-300">
+        <p>Die Teilnahmegebühr für die Erstifahrt beträgt: <em>15€</em>. Nach erfolgreicher Anmeldung überweisen Sie bitte diesen Betrag an die: <br/> 
+        <ul class="list-disc list-inside">
+          <li>Fachschaft Wirtschaft</li>
+          <li>Fördesparkasse</li>
+          <li>IBAN: DE56 1111 1111 1111 1111 11</li>
+          <li>Verwendungszweck: "Matrikelnummer, Erstifahrt 23"</li>
+        </ul></p>
+      </div>
+  </div>
 </template>
 
 <script>

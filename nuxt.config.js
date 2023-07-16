@@ -84,6 +84,6 @@ export default {
 
 
   router: {
-    middleware: ["auth",]
+    middleware: []
   },
 }

@@ -6,12 +6,12 @@ export { default as HiddenPage } from '../../components/HiddenPage.vue'
 export { default as Login } from '../../components/Login.vue'
 export { default as Register } from '../../components/Register.vue'
 export { default as Calender } from '../../components/calender.vue'
-export { default as Collapsablenav } from '../../components/collapsablenav.vue'
 export { default as Contact } from '../../components/contact.vue'
 export { default as Einsichtanmeldungen } from '../../components/einsichtanmeldungen.vue'
 export { default as Features } from '../../components/features.vue'
 export { default as Imagegalery } from '../../components/imagegalery.vue'
 export { default as Navbar } from '../../components/navbar.vue'
+export { default as Neuesfachschaft } from '../../components/neuesfachschaft.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
