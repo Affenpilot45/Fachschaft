@@ -1,4 +1,7 @@
-# fknuxtprojekt
+# FachschaftWebsiteFk
+
+Dies ist die Abgabe für das Projekt in dem Modul Webengineering.
+Abgebende sind Felix Koch, David Talevski und Martin Krawtzow.
 
 ## Build Setup
 

@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col justify-center py-3 lg:py-5 mt-16">
-      <div class="flex flex-col self-center w-full md:w-1/2 mx-10 text-gray-300">
-        <h2 class="flex text-center flex-col justify-center text-ms font-semibold" >Schreibt Artikel, welche auf der Homepage erscheinen:</h2>
-          <form @submit.prevent="saveData" class=" bg-gradient-to-r from-blue-300/70 to-blue-500/70 border-4 border-fh-blue rounded-lg flex flex-col justify-center lg:col-start-2 lg:col-span-7 p-6 mt-4" >
+  <div class="flex flex-col justify-center mt-20 mx-24 lg:mx-10">
+      <div class="flex flex-col self-center w-full md:w-1/2 text-gray-300">
+        <h2 class="flex text-center flex-col justify-center text-ms font-semibold mb-3" >Schreibt Artikel, welche auf der Homepage erscheinen:</h2>
+          <form @submit.prevent="saveData" class=" bg-blue-400/25 border-4 border-fh-blue-text backdrop-brightness-125 backdrop-blur rounded-lg flex flex-col justify-center p-6" >
               <label class="text-white font-semibold" for="title">Titel:</label>
               <input class="py-2 px-4 mt-2 rounded border border-gray-300 focus:border-blue-500 focus:outline-none" type="text" id="title" v-model="title" placeholder="Titel">
               <label class="mt-4 text-white font-semibold" for="content">Inhalt:</label>

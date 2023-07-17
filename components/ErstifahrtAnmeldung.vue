@@ -1,12 +1,12 @@
 <template>
-  <div class="flex flex-col justify-center py-3 lg:py-5">
+  <div class="flex flex-col justify-center mt-10">
       <div class="flex flex-col self-center text-lg">
-        <div class="text-center self-center text-gray-300">
+        <div class="text-center self-center text-gray-300 mb-3">
           <h3>Meldet euch hier für die Ersti-Fahrt an.<br/>
           Gebt einfach Name, Vorname und Matrikelnummer an und ihr seid dabei.</h3>            
         </div>
         <div class="w-2/3 md:w-1/2 self-center">
-          <form @submit.prevent="saveData" class="bg-gradient-to-r from-blue-300 to-blue-500 shadow-inner border border-blue-700 rounded-lg flex flex-col p-6 mt-4 text-sm md:text-base" >
+          <form @submit.prevent="saveData" class="bg-blue-400/25 backdrop-blur backdrop-brightness-125 shadow-inner border-2 border-fh-blue-text rounded-lg flex flex-col p-6 text-sm md:text-base" >
               <label class="text-white font-semibold" for="vorname">Vorname:</label>
               <input class="py-2 px-4 mt-2 rounded border border-gray-300 focus:border-blue-500 focus:outline-none" type="text" id="vorname" v-model="vorname" required placeholder="Vorname">
               <label class="mt-4 text-white font-semibold" for="nachname">Nachname:</label>

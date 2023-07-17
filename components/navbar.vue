@@ -1,12 +1,12 @@
 <template>
   <div
-    class="fixed top-0 border-0 rounded-b-lg self-center flex md:w-2/3 w-full items-center justify-center p-2 bg-fh-blue text-fh-blue-text"
+    class="fixed top-0 border-0 rounded-b-lg self-center flex md:w-2/3 w-full items-center justify-center p-2 bg-fh-blue text-gray-300"
   >
     <div class="grow">
         <div class="flex flex-row items-center justify-center">
             <a
               href="/"
-              class="text-fh-blue-text hover:text-white flex items-center justify-center"
+              class="text-gray-300 hover:text-white flex items-center justify-center"
             >
             <svg
             version="1.0"
@@ -18,7 +18,7 @@
           >
             <g
               transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
-              fill="#5a73db"
+              fill="#d1d5db"
               stroke="none"
             >
               <path
@@ -58,7 +58,7 @@
         </div>
     </div>
 
-    <div class="">
+    <div class=" font-semibold">
       <t-dropdown text="User">
         <div class="py-1 rounded-md shadow-xs ">
           <a
@@ -107,7 +107,7 @@ import firebase from "~/plugins/firebase.js";
 
 import { ref } from "vue";
 export default {
-
+//  heranholen der Variable isAuthenticated um bestimmte Buttons nur anzuzeigen wenn man sich eingeloggt hat
   computed: {
   isAuthenticated() {
     if (typeof window !== 'undefined') {
@@ -126,6 +126,7 @@ export default {
 
     return { open, MenuOpen };
   },
+  // methode zum Ausloggen
   methods: {
     logout() {
       firebase.auth().signOut();

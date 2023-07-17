@@ -150,7 +150,7 @@ export default {
     login() {
       firebase.auth().signInWithEmailAndPassword(this.email, this.password)
         .then(() => {
-          // Erfolgreich angemeldet, umleiten zu einer geschützten Seite  
+          // Erfolgreich angemeldet, umleiten zur Startseite und Speichern der Variable isAuthenticated 
           this.$router.push('/');
           window.localStorage.setItem("isAuthenticated", "true")
           alert("Erfolgreich!")

@@ -52,7 +52,7 @@
                     </h4>
                   </div>
 
-                  <form @submit.prevent="login">
+                  <form @submit.prevent="register">
                     <p class="mb-4">Erstelle einen Account</p>
                     <!--Username input-->
                     <div class="relative mb-4">
@@ -150,7 +150,8 @@ export default {
     register() {
       firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
         .then(() => {
-          // Erfolgreich angemeldet, umleiten zu einer geschützten Seite
+          // Erfolgreich registriert, umleiten zur Startseite und Speichern der Variable isAuthenticated
+          window.localStorage.setItem("isAuthenticated", "true")
           this.$router.push('/');
           alert("Erfolgreich!")
         })

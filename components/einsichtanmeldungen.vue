@@ -1,16 +1,16 @@
 <template>
-  <div class="flex justify-center">
+  <div class="flex justify-center mt-10">
     <div class="flex flex-col md:flex-row justify-center w-4/5">
       <div class="flex flex-col  justify-center">
-        <div class="text-center self-center text-gray-300 py-10">
-          <h2 class="break-words">
-            Meldet manuell jemanden zur Erstifahrt an.
+        <div class="text-center self-center text-gray-300">
+          <h2 class="break-words mb-3">
+            Fügt jemanden zur Erstifahrt hinzu.
           </h2>
         </div>
         <div class="flex self-center">
           <form
             @submit.prevent="saveData"
-            class="bg-gradient-to-r from-blue-300/70 to-blue-500/70 shadow-inner border-4 font-semibold text-gray-300 border-fh-blue rounded-lg flex flex-col p-6 mt-4 text-sm md:text-base"
+            class="bg-blue-400/25 shadow-inner border-4 font-semibold text-gray-300 border-fh-blue-text backdrop-brightness-125 backdrop-blur rounded-lg flex flex-col p-6 text-sm md:text-base"
           >
             <label class="font-semibold" for="vorname">Vorname:</label>
             <input
@@ -53,15 +53,15 @@
               class="py-2 px-4 mt-4 bg-blue-700 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
               type="submit"
             >
-              Anmelden
+              Hinzufügen
             </button>
           </form>
         </div>
       </div>
       <div class="flex flex-col self-center lg:text-base text-sm text-gray-300">
-        <h2 class="py-10 text-center">Bisherige Anmeldungen zur Erstifahrt</h2>
+        <h2 class="mb-3 text-center">Bisherige Anmeldungen zur Erstifahrt</h2>
         <ul
-          class="bg-gradient-to-r from-blue-300/70 to-blue-500/70 border-4 border-fh-blue rounded-lg lg:px-5 divide-y-2 divide-dashed"
+          class="bg-blue-400/25 border-4 border-fh-blue-text rounded-lg lg:px-5 backdrop-blur backdrop-brightness-125 divide-y-2 divide-dashed"
         >
           <li
             class="break-words py-3 px-1 lg:px-5 text-sm lg:text-base"

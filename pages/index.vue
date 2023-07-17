@@ -8,6 +8,7 @@
         <ErstifahrtAnmeldung />
         <calender />
         <imagegalery />
+        <Footer />
       </div>
     </div>
   </div>

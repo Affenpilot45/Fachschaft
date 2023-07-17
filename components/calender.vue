@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col py-5 justify-center">
-    <div class="flex self-center pb-3 text-gray-300">
+  <div class="flex flex-col mt-10 justify-center">
+    <div class="flex self-center mb-3 text-gray-300">
       <h2>Veranstaltungen</h2>
     </div>
     <iframe
